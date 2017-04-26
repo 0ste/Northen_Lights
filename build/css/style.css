@@ -1,0 +1,127 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: ff-Ubuntu; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.header {
+  position: relative; }
+  .header__inner {
+    min-height: 500px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 300px; }
+
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0);
+  height: 100%;
+  background-color: #1c1531;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  transition: all 0.325s 0s ease; }
+  .main-nav--open {
+    transform: translate(0, 0);
+    color: #fff; }
+  .main-nav__list {
+    padding: 0 40px;
+    margin: 0;
+    list-style-type: none;
+    color: #fff; }
+  .main-nav__item {
+    display: block; }
+
+.main-title__head {
+  margin: 0;
+  color: #fff;
+  font-family: "Nord", sans-serif; }
+
+.main-title__description {
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1c1531;
+  opacity: 0.5;
+  color: #fff;
+  height: 100%;
+  width: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  white-space: nowrap;
+  z-index: 10; }
+  .side-bar__vk {
+    background-image: url(../img/sprite-09927653139753896.png);
+    background-position: 0px -44px;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    top: 10px; }
+  .side-bar__link {
+    transform: rotate(-90deg);
+    color: #fff; }
+
+.nav-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  margin: 10px; }
+  .nav-burger--close {
+    background-image: url(../img/sprite-09927653139753896.png);
+    background-position: -44px 0px;
+    width: 40px;
+    height: 40px; }
+  .nav-burger--hamburger {
+    background-image: url(../img/sprite-09927653139753896.png);
+    background-position: 0px 0px;
+    width: 40px;
+    height: 40px; }
+  @media screen and (min-width: 748px) {
+
+  .header__inner {
+    width: 748px; }
+
+  .main-nav {
+    display: block;
+    height: auto;
+    transform: translate(0, 0); }
+
+  .nav-burger {
+    display: none; } }
+  @media screen and (min-width: 1170px) {
+
+  .header__inner {
+    width: 1170px; } }
+
+/*# sourceMappingURL=style.css.map */

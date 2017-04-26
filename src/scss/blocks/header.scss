@@ -1,0 +1,112 @@
+.header {
+
+	position: relative;
+
+	&__inner{
+			min-height: 500px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		width: $container-xs;
+		@media screen and (min-width: $screen-sm) {
+			width: $container-sm;
+		}
+
+		@media screen and (min-width: $screen-lg) {
+			width: $container-lg;
+		}
+
+	}
+
+}
+
+
+.main-nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-100%, 0);
+	height: 100%;
+	background-color: #1c1531;
+	display: flex;
+	align-items: center;
+	transition: all 0.325s 0s ease;
+	// display: none;
+	
+	@media screen and (min-width: $screen-sm) {
+		display: block;
+		height: auto;
+		transform: translate(0, 0);
+	}
+		&--open{
+			transform: translate(0, 0);
+			color: $c-white;
+		}
+		&__list{
+			padding: 0 40px;
+			margin: 0;
+			list-style-type: none;
+			color: $c-white;
+		}
+		&__item{
+			display: block;
+
+		}
+}
+
+.main-title{
+
+	&__head{
+		margin: 0;
+		color: #fff;
+		font-family: $ff-Nord;
+	}
+	&__description {
+		font-family: $ff-Jura;
+		font-size: $sz-16;
+		color: $c-white;
+	}
+}
+
+.side-bar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #1c1531;
+	opacity: 0.5;
+	color: #fff;
+	height: 100%;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	z-index: 10;
+
+	&__vk{
+		@include sprite($vk);
+		position: absolute;
+		top: 10px;
+	}
+
+	&__link{
+			transform: rotate(-90deg);
+			color: $c-white;
+	}
+}
+.nav-burger{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		margin: 10px;
+	@media screen and (min-width: $screen-sm) {
+		display: none;
+	}
+	&--close{
+		@include sprite($close);
+	}
+	&--hamburger{
+		@include sprite($burger);
+	}
+}
