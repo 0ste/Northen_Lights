@@ -59,12 +59,14 @@
 	&__head{
 		margin: 0;
 		color: #fff;
+		text-decoration: none;
 		font-family: $ff-Nord;
 	}
 	&__description {
 		font-family: $ff-Jura;
 		font-size: $sz-16;
 		color: $c-white;
+		font-weight: 300;
 	}
 }
 

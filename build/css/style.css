@@ -19,6 +19,36 @@ img {
   height: auto;
   vertical-align: middle; }
 
+@font-face {
+  font-family: 'Jura';
+  src: url("fonts/jura-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Jura';
+  src: url("fonts/jura-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nord';
+  src: url("fonts/nordmedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .header {
   position: relative; }
   .header__inner {
@@ -56,12 +86,14 @@ img {
 .main-title__head {
   margin: 0;
   color: #fff;
+  text-decoration: none;
   font-family: "Nord", sans-serif; }
 
 .main-title__description {
   font-family: "Jura", sans-serif;
   font-size: 16px;
-  color: #fff; }
+  color: #fff;
+  font-weight: 300; }
 
 .side-bar {
   position: absolute;

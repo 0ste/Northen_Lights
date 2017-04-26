@@ -174,13 +174,21 @@ gulp.task('js', function () {
     .pipe(gulp.dest(dirs.build + '/js'));
 });
 
+// ЗАДАЧА: копирование шрифтов 
+gulp.task('fonts', function() { 
+return gulp.src(dirs.source + '/fonts/**/*.*') 
+.pipe(gulp.dest(dirs.build + '/fonts')); 
+});
+
+
 // ЗАДАЧА: Сборка всего
 gulp.task('build', gulp.series(
   'clean',
   'svgstore',
   'png:sprite',
   gulp.parallel('style', 'img', 'js'),
-  'pug',
+  'pug', 
+  'fonts', 
   'html'
 ));
 
