@@ -32,7 +32,10 @@
 	align-items: center;
 	transition: all 0.325s 0s ease;
 	// display: none;
-	
+
+			&--active {
+			color: #fff;
+		}
 	@media screen and (min-width: $screen-sm) {
 		display: block;
 		height: auto;
@@ -40,18 +43,20 @@
 	}
 		&--open{
 			transform: translate(0, 0);
-			color: $c-white;
 		}
 		&__list{
-			padding: 0 40px;
+			padding: 0 30px;
 			margin: 0;
 			list-style-type: none;
-			color: $c-white;
 		}
-		&__item{
-			display: block;
 
-		}
+}
+.main-nav__link {
+	color: #fff;
+	text-decoration: none;
+	&--active {
+		color: #fff;
+	}
 }
 
 .main-title{

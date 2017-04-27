@@ -5,7 +5,7 @@
 
 @font-face { 
   font-family: 'Jura'; 
-  src: url('fonts/jura-regular-webfont.woff') format('woff');
+  src: url('../fonts/jura-regular-webfont.woff') format('woff');
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        // url('webfont.woff') format('woff'); 
   font-weight: 400; 
@@ -14,7 +14,7 @@
 
 @font-face { 
   font-family: 'Jura'; 
-  src: url('fonts/jura-light-webfont.woff') format('woff'); 
+  src: url('../fonts/jura-light-webfont.woff') format('woff'); 
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        // url('webfont.woff') format('woff'); 
   font-weight: 300; 
@@ -23,7 +23,7 @@
 
 @font-face { 
   font-family: 'Ubuntu'; 
-  src: url('fonts/ubuntu-medium-webfont.woff') format('woff');
+  src: url('../fonts/ubuntu-medium-webfont.woff') format('woff');
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        // url('webfont.woff') format('woff'); 
   font-weight: 600; 
@@ -32,7 +32,7 @@
 
 @font-face { 
   font-family: 'Ubuntu'; 
-  src: url('fonts/ubuntu-light-webfont.woff') format('woff'); 
+  src: url('../fonts/ubuntu-light-webfont.woff') format('woff'); 
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        // url('webfont.woff') format('woff'); 
   font-weight: 300; 
@@ -41,9 +41,9 @@
 
 @font-face { 
   font-family: 'Nord'; 
-  src: url('fonts/nordmedium-webfont.woff') format('woff'); 
+  src: url('../fonts/nordmedium-webfont.woff') format('woff');
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       // url('webfont.woff') format('woff'); 
+       // url('fonts/nordmedium-webfont.woff2') format('woff2'); 
   font-weight: normal; 
   font-style: normal; 
 }
