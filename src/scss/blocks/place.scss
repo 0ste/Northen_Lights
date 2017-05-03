@@ -31,7 +31,7 @@
       list-style-type: none;
       display: flex;
       justify-content: space-between; 
-padding-left: 0;
+      padding-left: 0;
     }
 
     &__item {
@@ -41,14 +41,32 @@ padding-left: 0;
       font-size: $sz-10;
     }
 
-      &__item:before {
+
+  &__item:before {
       content: '';
       position: absolute;
-      left: 0;
-      width: 10px;
-      height: 10px;
+      // left: 0;
+      width: 9px;
+      height: 9px;
       background-color: green;
   }
+
+
+
+    //   &__item:before {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   width: 10px;
+    //   height: 10px;
+    //   background-color: #ef8989;
+    // }
+
+  
+      // &--pink:before {
+      //   background-color: #ef8989;
+      // }
+
 
     &__map {
     margin: 0 -10px;

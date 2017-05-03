@@ -178,48 +178,27 @@ img {
   .place__item:before {
     content: '';
     position: absolute;
-    left: 0;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     background-color: green; }
   .place__map {
     margin: 0 -10px; }
 
 .slide-section {
-  position: relative;
-  margin: 0;
-  padding: 0; }
+  background-image: url("img/slider.png"); }
   .slide-section__inner {
     min-height: 400px;
     margin: 0 auto;
     -ms-flex-align: center;
         align-items: center;
     width: 300px; }
-  .slide-section__info {
-    width: 300px;
-    height: 100px;
-    position: relative;
-    overflow: hidden; }
   .slide-section__img {
     margin: 0 -10px; }
   .slide-section .slide {
     min-height: 400px;
     z-index: 9; }
-  .slide-section .slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 400px;
-    margin: 0;
-    padding: 0; }
-    .slide-section .slider__item {
-      width: 300px;
-      height: 100px;
-      -ms-flex-align: center;
-          align-items: center;
-      float: left;
-      margin: 0;
-      padding: 0; }
+  .slide-section__visual {
+    display: none; }
   .slide-section__text {
     margin: 0;
     padding: 0;
