@@ -157,21 +157,28 @@ img {
     -ms-flex-align: center;
         align-items: center;
     width: 300px; }
-    .place__inner__time {
-      display: -ms-flexbox;
-      display: flex;
-      position: absolute;
-      background-color: green; }
-    .place__inner__title {
-      font-family: "Jura", sans-serif;
-      font-size: fz-20;
-      padding-top: 100px; }
-    .place__inner__list {
-      list-style-type: none; }
-    .place__inner__item {
-      color: green; }
-    .place__inner__map {
-      margin: 0 -10px; }
+  .place__time {
+    position: absolute; }
+  .place__title {
+    font-family: "Jura", sans-serif;
+    font-size: fz-20;
+    padding-top: 40px; }
+  .place__list {
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .place__item:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background-color: green; }
+  .place__map {
+    margin: 0 -10px; }
 
 .slide-section {
   position: relative;
