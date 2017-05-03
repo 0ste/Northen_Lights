@@ -15,34 +15,45 @@
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
     }
-
+ }
 
     &__time {
-      display: flex;
       position: absolute;
-        background-color: green;
-
     }
 
     &__title {
       font-family: $ff-Jura;
       font-size: fz-20;
-      padding-top: 100px;
+      padding-top: 40px;
     }
 
     &__list {
       list-style-type: none;
+      display: flex;
+            justify-content: space-between; 
+
+
     }
 
     &__item {
-      color: green;
+
     }
+
+      &__item:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      background-color: green;
+  }
 
     &__map {
     margin: 0 -10px;
     }
 
-  }
+ 
 
 
 

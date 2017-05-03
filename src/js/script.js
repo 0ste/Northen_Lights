@@ -3,7 +3,7 @@ $(document).ready(function(){
     $(this).toggleClass('nav-burger--hamburger nav-burger--close');
     $('.main-nav').toggleClass('main-nav--open');
   })
-});
+
 
 
 $('.slider').slick({
@@ -15,8 +15,8 @@ $('.slider').slick({
   arrows: false,
   dots: true,
   infinite: true,
-  speed: 300,
-  autoplay: true,
+  // speed: 300,
+  // autoplay: true,
   responsive: [
     {
       breakpoint: 768,
@@ -26,10 +26,6 @@ $('.slider').slick({
     }
   ]
 });
+});
 
 
-  $('.team__link').click(function(e) { 
-      e.preventDefault();
-      $(this).closest('.team').find('.team__manager').show();
-      $(this).hide();
-  });
