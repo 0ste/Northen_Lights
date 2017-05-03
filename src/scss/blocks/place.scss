@@ -30,22 +30,23 @@
     &__list {
       list-style-type: none;
       display: flex;
-            justify-content: space-between; 
-
-
+      justify-content: space-between; 
+padding-left: 0;
     }
 
     &__item {
-
+      padding-left: 20px;
+      position: relative;
+      font-family: $ff-Jura;
+      font-size: $sz-10;
     }
 
       &__item:before {
       content: '';
       position: absolute;
-      top: 10px;
       left: 0;
-      width: 9px;
-      height: 9px;
+      width: 10px;
+      height: 10px;
       background-color: green;
   }
 
