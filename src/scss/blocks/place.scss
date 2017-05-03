@@ -1,0 +1,54 @@
+.place {
+  margin: 0;
+  padding: 0;
+
+
+  &__inner {
+    min-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    width: $container-xs;
+    @media screen and (min-width: $screen-sm) {
+      width: $container-sm;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: $container-lg;
+    }
+
+
+    &__time {
+      display: flex;
+      position: absolute;
+        background-color: green;
+
+    }
+
+    &__title {
+      font-family: $ff-Jura;
+      font-size: fz-20;
+      padding-top: 100px;
+    }
+
+    &__list {
+      list-style-type: none;
+    }
+
+    &__item {
+      color: green;
+    }
+
+    &__map {
+    margin: 0 -10px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+}

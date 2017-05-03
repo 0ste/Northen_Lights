@@ -1,9 +1,12 @@
 .about {
 
   position: relative;
+  background-color: $bgc-gray;
+
 
   &__inner{
-    min-height: 500px;
+    min-height: 430px;
+
     margin: 0 auto;
     width: $container-xs;
     @media screen and (min-width: $screen-sm) {
@@ -17,6 +20,7 @@
   &__title {
     font-family: $ff-Jura;
     font-size: fz-20;
+    padding-top: 40px;
   }
   &__row {
       position: relative; 
