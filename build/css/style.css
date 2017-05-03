@@ -120,7 +120,7 @@ img {
   white-space: nowrap;
   z-index: 10; }
   .side-bar__vk {
-    background-image: url(../img/sprite-06799302268471115.png);
+    background-image: url(../img/sprite-0054127714146677164.png);
     background-position: 0px -44px;
     width: 25px;
     height: 15px;
@@ -137,12 +137,12 @@ img {
   z-index: 9;
   margin: 10px; }
   .nav-burger--close {
-    background-image: url(../img/sprite-06799302268471115.png);
+    background-image: url(../img/sprite-0054127714146677164.png);
     background-position: -44px 0px;
     width: 40px;
     height: 40px; }
   .nav-burger--hamburger {
-    background-image: url(../img/sprite-06799302268471115.png);
+    background-image: url(../img/sprite-0054127714146677164.png);
     background-position: 0px 0px;
     width: 40px;
     height: 40px; }
@@ -193,6 +193,41 @@ img {
     margin: 0;
     padding: 0;
     position: relative; }
+
+.about {
+  position: relative; }
+  .about__inner {
+    min-height: 500px;
+    margin: 0 auto;
+    width: 300px; }
+  .about__title {
+    font-family: "Jura", sans-serif;
+    font-size: fz-20; }
+  .about__row {
+    position: relative; }
+  .about__row:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 1px;
+    height: 220px;
+    background-color: green; }
+  .about__item {
+    padding-left: 20px;
+    position: relative; }
+  .about__item:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background-color: green; }
+  .about__number {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    color: #e6e6e6; }
   @media screen and (min-width: 748px) {
 
   .header__inner {
@@ -207,6 +242,9 @@ img {
     display: none; }
 
   .slide-section__inner {
+    width: 748px; }
+
+  .about__inner {
     width: 748px; } }
   @media screen and (min-width: 1170px) {
 
@@ -214,6 +252,9 @@ img {
     width: 1170px; }
 
   .slide-section__inner {
+    width: 1170px; }
+
+  .about__inner {
     width: 1170px; } }
 
 /*# sourceMappingURL=style.css.map */

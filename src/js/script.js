@@ -6,33 +6,26 @@ $(document).ready(function(){
 });
 
 
-
-var slideWidth=300;
-var sliderTimer;
-$(function(){
-$('.slider').width($('.slider').children().size()*slideWidth);
-    sliderTimer=setInterval(nextSlide,4000);
-    $('.slide-section__info').hover(function(){
-        clearInterval(sliderTimer);
-    },function(){
-        sliderTimer=setInterval(nextSlide,4000);
-    });
-});
-
-function nextSlide(){
-    var currentSlide=parseInt($('.slider').data('current'));
-    currentSlide++;
-    if(currentSlide>=$('.slider').children().size())
+$('.slider').slick({
+  mobileFirst: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: '0',
+  arrows: false,
+  dots: true,
+  infinite: true,
+  speed: 300,
+  autoplay: true,
+  responsive: [
     {
-        currentSlide=0;   
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+      }
     }
-    $('.slider').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
-}
-
-
-
-
-
+  ]
+});
 
 
   $('.team__link').click(function(e) { 

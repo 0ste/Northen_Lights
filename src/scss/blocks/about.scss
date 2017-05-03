@@ -1,0 +1,55 @@
+.about {
+
+  position: relative;
+
+  &__inner{
+    min-height: 500px;
+    margin: 0 auto;
+    width: $container-xs;
+    @media screen and (min-width: $screen-sm) {
+      width: $container-sm;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: $container-lg;
+    }
+  }
+  &__title {
+    font-family: $ff-Jura;
+    font-size: fz-20;
+  }
+  &__row {
+      position: relative; 
+  }
+
+  &__row:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 4px;
+      width: 1px;
+      height: 220px;
+      background-color: green;
+  }
+
+  &__item {
+      padding-left: 20px;
+      position: relative;
+  }
+  &__item:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      background-color: green;
+  }
+  &__number {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-30;
+    color: #e6e6e6;
+
+  }
+
+}
