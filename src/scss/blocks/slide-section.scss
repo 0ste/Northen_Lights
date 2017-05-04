@@ -1,8 +1,9 @@
 .slide-section {
-  background-image: url('img/slider.png');
+  background-image: url('../img/slider.png');
+  color: #fff;
 
   &__inner {
-    min-height: 400px;
+    // min-height: 400px;
     margin: 0 auto;
     align-items: center;
     width: $container-xs;
@@ -13,26 +14,39 @@
       width: $container-lg;
     }
   }
-
-
-&__info {
-    // width: 300px;
-    // height: 100px;
-    // position: relative;
-    // overflow: hidden;
-
+&__title {
+  top: 40px;
 }
+// &__info {
+// top: 40px;
+// }
 
 &__img {
     margin: 0 -10px;
 }
 
 .slide {
-  min-height: 400px;
-  z-index: 9;
-
+    min-height: 400px;
+    z-index: 9;
 }
 
+.slick-dots li{ 
+    display: inline-block; 
+} 
+
+.slick-dots li button{ 
+    color: transparent; 
+    background-color: green; 
+    border: none; 
+    outline: none; 
+    width: 20px; 
+    height:20px; 
+    margin-right:10px; 
+} 
+
+.slick-dots li.slick-active button{ 
+background-color: cyan; 
+}
 
 &__visual {
   display: none;
