@@ -1,0 +1,85 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $bgc-green;
+
+
+  &__inner {
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    width: $container-xs;
+    @media screen and (min-width: $screen-sm) {
+      width: $container-sm;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: $container-lg;
+    }
+  }
+
+
+    &__title {
+      font-family: $ff-Jura;
+      font-size: $sz-20;
+      margin: 0;
+    }
+
+    &__slider {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+}
+  .review {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // display: flex;
+    
+    &__photo {
+      width: 60px;
+      height: 60px;
+      background-image: url('../img/author.png');
+
+    }
+    &__author {
+      font-family: $ff-Ubuntu;
+      font-size: $sz-10;
+      line-height: $lh-20;
+    }
+
+    &__text {
+      margin: 0;
+      align-items: center;
+      position: relative;
+      font-family: $ff-Ubuntu;
+      font-size: $sz-10;
+      line-height: $lh-20;
+    }
+
+  & .slick-dots {
+    padding-left: 0;
+    text-align: left;
+
+    & li {
+      display: inline-block; 
+    }
+
+    & li button{ 
+      color: transparent; 
+      background-color: green; 
+      border: none; 
+      outline: none; 
+      width: 15px; 
+      height: 15px; 
+      margin-right: 15px; 
+      padding: 0;
+    } 
+
+    & li.slick-active button{ 
+      background-color: cyan; 
+    }
+  }
+    }
+
+
+
+

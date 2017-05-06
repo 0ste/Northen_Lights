@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Северное сияние</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Jura:300,400|Ubuntu:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="header" style="background-image: url('img/bg_header.png');">
@@ -33,47 +34,32 @@
 	</header>
 
 	<main class="main">
-		<section class="slide-section id="slide-section-id">
+		<section class="slide-section" id="slide-section-id">
 			<div class="slide-section__inner">
 				<div class="slide-section__row">
 
 
 					<div class="slide-section__info">
-					<h2 class="slide-section__title">Легенды народов</h2>
+						<h2 class="slide-section__title">Легенды народов севера о полярном сиянии</h2>
 
 
-					<div class='slider' data-current=0>
-						<div class="slider__item">
-							<p class="slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
+						<div class="slider" id="slider-id">
+							<div class="slider__item">
+								<p class="slider__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами.</p>
+							</div>
+							<div class="slider__item">
+								<p class="slider__text">Velit architecto, dicta cumque error iure. Blanditiis debitis dignissimos nobis nemo aut placeat unde beatae.</p>
+							</div>
+							<div class="slider__item">
+								<p class="slider__text">Obcaecati maxime esse saepe tempore, suscipit explicabo, labore minus dolorem maiores laboriosam quae similique excepturi!</p>
+							</div>
+							<div class="slider__item">
+								<p class="slider__text">Totam vitae asperiores deleniti ea atque impedit ipsum natus, laborum molestiae dolorem aperiam at ad!</p>
+							</div>
+							<div class="slider__item">
+								<p class="slider__text">Atque repudiandae, nulla earum. Rerum quasi ratione nihil expedita voluptatem, omnis magni debitis numquam vel!</p>
+							</div>
 						</div>
-						<div class="slider__item">
-							<p class="slider__text">Velit architecto, dicta cumque error iure. Blanditiis debitis dignissimos nobis nemo aut placeat unde beatae.</p>
-						</div>
-						<div class="slider__item">
-							<p class="slider__text">Obcaecati maxime esse saepe tempore, suscipit explicabo, labore minus dolorem maiores laboriosam quae similique excepturi!</p>
-						</div>
-						<div class="slider__item">
-							<p class="slider__text">Totam vitae asperiores deleniti ea atque impedit ipsum natus, laborum molestiae dolorem aperiam at ad!</p>
-						</div>
-						<div class="slider__item">
-							<p class="slider__text">Atque repudiandae, nulla earum. Rerum quasi ratione nihil expedita voluptatem, omnis magni debitis numquam vel!</p>
-						</div>
-					</div>
-
-
-					<div class="slide-nav">
-						<span class="slide-nav__link slide-nav__link--prev"></span>
-						<span class="slide-nav__link slide-nav__link--next"></span>
-					</div>
-					<div class="pagination">
-						<span class="pagination__item pagination__item--green
-						pagination__item--green-active"></span>
-						<span class="pagination__item pagination__item--green"></span>
-						<span class="pagination__item pagination__item--green"></span>
-						<span class="pagination__item pagination__item--green"></span>
-						<span class="pagination__item pagination__item--green"></span>
-					</div>
-
 
 					</div>
 					<div class='slide-section__visual'>
@@ -102,7 +88,7 @@
 					</div>
 					<div class="about__item">
 						<span class="about__number">02</span>
-						<p class="about_text">Спектр полярных сияний меняется с высотой.</p>
+						<p class="about__text">Спектр полярных сияний меняется с высотой.</p>
 					</div>
 					<div class="about__item">
 						<span class="about__number">03</span>
@@ -116,66 +102,79 @@
 
 		<section class="place" id="place-id">
 			<div class="place__inner">
-					<h2 class="place__title">Где и когда</h2>
-					<div class="place__time">
-						<p class="place__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum officia, dicta vel odit vero fugiat veritatis ut quidem temporibus. Quia.</p>
-						<ul class="place__item">
-							<li class="place__item--pink">Летом</li>
-							<li class="place__item--blue">Зимой</li>
-							<li class="place__item--green">Весной</li>
-							<li class="place__item--orange">Осенью</li>
-						</ul>
-					</div>
-					<div class="place__map">
-						<img src='img/map_320.png.png' alt="#"class="place__img-map"></img>
-					</div>
+				<h2 class="place__title">Где и когда</h2>
+				<div class="place__time">
+					<p class="place__text">Наблюдать сияние можно в Якутске, Салехарде, Мурманске, на Таймыре и на Аляске. Наиболее часто полярное сияние встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части Гренландии, на севере Норвегии и Сибири.</p>
+					<ul class="place__list">
+						<li class="place__item place__item--pink">Летом</li>
+						<li class="place__item place__item--blue">Зимой</li>
+						<li class="place__item place__item--green">Весной</li>
+						<li class="place__item place__item--orange">Осенью</li>
+					</ul>
+				</div>
 			</div>
+			<div class="place__map"></div>
 		</section>
 
 
 
-		<section class="reviews" id="reviews-id">
+		<section class="reviews">
 			<div class="reviews__inner">
-					<h2 class="review__title">Отзывы</h2>
-					<div class="reviews__slider">
-						<div class="reviews__item">
+					<h2 class="reviews__title">Отзывы</h2>
+					<div class="reviews__slider" id="reviews-id">
+							
+
 							<div class="review">
-								<div class="review__visual"><img src="#" alt="" class="review_photo"><span class="review__author"></span></div>
+								<div class="review__visual">
+									<img src='../img/author.png' alt="#" class="review__photo">
+									<span class="review__author">Игорь, о Финляндии</span>
+								</div>
 								<p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 							</div>
 						</div>
-						<div class="reviews__item">
 							<div class="review">
-								<div class="review__visual"><img src="#" alt="" class="review_photo"><span class="review__author"></span></div>
+								<div class="review__visual">
+									<img src='../img/author.png' alt="#" class="review__photo">
+									<span class="review__author">Игорь, о Финляндии</span>
+								</div>
 								<p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 							</div>
 						</div>
-						<div class="reviews__item">
 							<div class="review">
-								<div class="review__visual"><img src="#" alt="" class="review_photo"><span class="review__author"></span></div>
+								<div class="review__visual">
+									<img src='../img/author.png' alt="#" class="review__photo">
+									<span class="review__author">Игорь, о Финляндии</span>
+								</div>
 								<p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 							</div>
 						</div>
-						<div class="reviews__item">
 							<div class="review">
-								<div class="review__visual"><img src="#" alt="" class="review__photo"><span class="review__author"></span></div>
+
+								<div class="review__visual">
+									<img src='../img/author.png' alt="#" class="review__photo">
+									<span class="review__author">Игорь, о Финляндии</span>
+								</div>
+
+
 								<p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 							</div>
+
 						</div>
-						<div class="reviews__item">
 							<div class="review">
-								<div class="review__visual"><img src="#" alt="" class="review_photo"><span class="review__author"></span></div>
+								<div class="review__visual">
+									<img src='../img/author.png' alt="#" class="review__photo">
+									<span class="review__author">Игорь, о Финляндии</span>
+								</div>
 								<p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-							</div>
 						</div>
-						<div class="pagination">
+						<!-- <div class="pagination">
 						<span class="pagination__item pagination_item--black
 						pagination_item--black-active"></span>
 						<span class="pagination__item pagination_item--black"></span>
 						<span class="pagination__item pagination_item--black"></span>
 						<span class="pagination__item pagination_item--black"></span>
 						<span class="pagination__item pagination_item--black"></span>
-						</div>
+						</div> -->
 					</div>
 			</div>
 		</section>

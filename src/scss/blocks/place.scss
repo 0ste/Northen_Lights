@@ -1,10 +1,9 @@
 .place {
-  margin: 0;
-  padding: 0;
+  padding-top: 40px;
+
 
 
   &__inner {
-    min-height: 400px;
     margin: 0 auto;
     position: relative;
     align-items: center;
@@ -15,42 +14,67 @@
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
     }
- }
-
-    &__time {
-      position: absolute;
-    }
+  }
 
     &__title {
       font-family: $ff-Jura;
-      font-size: fz-20;
-      padding-top: 40px;
+      font-size: $sz-20;
+      margin: 0;
+    }
+
+    &__time {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      font-family: $ff-Ubuntu;
+      font-size: $sz-12;
+      line-height: $lh-20;
+      margin: 0;
     }
 
     &__list {
       list-style-type: none;
       display: flex;
       justify-content: space-between; 
+      font-family: $ff-Jura;
+      font-size: $sz-10;
       padding-left: 0;
+      padding-top: 30px;
     }
 
     &__item {
+
       padding-left: 20px;
       position: relative;
-      font-family: $ff-Jura;
-      font-size: $sz-10;
     }
 
-
-  &__item:before {
-      content: '';
-      position: absolute;
-      // left: 0;
-      width: 9px;
-      height: 9px;
-      background-color: green;
+  .place__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
   }
 
+    .place__item--pink:before {
+      background-color: #ef8989;
+    }
+
+    .place__item--blue:before {
+      background-color: #04a8a8;
+    }
+
+    .place__item--green:before {
+      background-color: #cdd63f;
+    }
+
+    .place__item--orange:before {
+      background-color: #efb672;
+    }
 
 
     //   &__item:before {
@@ -69,15 +93,12 @@
 
 
     &__map {
-    margin: 0 -10px;
+      // margin: 0 -10px;
+      background-image: url('../img/map_320.png');
+      min-height: 330px;
     }
 
  
-
-
-
-
-
 
 
 

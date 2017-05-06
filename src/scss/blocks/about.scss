@@ -2,12 +2,13 @@
 
   position: relative;
   background-color: $bgc-gray;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
 
   &__inner{
-    min-height: 430px;
-
     margin: 0 auto;
+    padding: 0;
     width: $container-xs;
     @media screen and (min-width: $screen-sm) {
       width: $container-sm;
@@ -20,16 +21,23 @@
   &__title {
     font-family: $ff-Jura;
     font-size: fz-20;
-    padding-top: 40px;
+    margin: 0;
+    line-height: $lh-24;
+
   }
   &__row {
       position: relative; 
+      padding-top: 20px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
   }
 
   &__row:before {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 60px;
       left: 4px;
       width: 1px;
       height: 220px;
@@ -38,12 +46,13 @@
 
   &__item {
       padding-left: 20px;
+      padding-top: 30px;
       position: relative;
   }
   &__item:before {
       content: '';
       position: absolute;
-      top: 10px;
+      margin-top: 10px;
       left: 0;
       width: 9px;
       height: 9px;
@@ -54,6 +63,11 @@
     font-size: $sz-30;
     color: #e6e6e6;
 
+
+  }
+  &__text {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-12;
   }
 
 }
