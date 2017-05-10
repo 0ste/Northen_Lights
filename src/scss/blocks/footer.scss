@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $bgc-cyan;
+
+    &__inner {
+      margin: 0 auto;
+      align-items: center;
+      width: $container-xs;
+      color: #fff;
+      font-family: $ff-Ubuntu;
+      font-size: $sz-12;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @media screen and (min-width: $screen-sm) {
+        width: $container-sm;
+      }
+      @media screen and (min-width: $screen-lg) {
+        width: $container-lg;
+      }
+    }
+
+    &__phone {
+      color: #fff;
+      text-decoration: none;
+    }
+
+}

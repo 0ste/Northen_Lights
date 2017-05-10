@@ -18,46 +18,21 @@
   }
 
 
-    &__title {
-      font-family: $ff-Jura;
-      font-size: $sz-20;
-      margin: 0;
-    }
+  &__title {
+    font-family: $ff-Jura;
+    font-size: $sz-20;
+    margin: 0;
+  }
 
-    &__slider {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-}
-  .review {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    // display: flex;
-    
-    &__photo {
-      width: 60px;
-      height: 60px;
-      background-image: url('../img/author.png');
-
-    }
-    &__author {
-      font-family: $ff-Ubuntu;
-      font-size: $sz-10;
-      line-height: $lh-20;
-    }
-
-    &__text {
-      margin: 0;
-      align-items: center;
-      position: relative;
-      font-family: $ff-Ubuntu;
-      font-size: $sz-10;
-      line-height: $lh-20;
-    }
+  &__slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   & .slick-dots {
     padding-left: 0;
-    text-align: left;
+    text-align: right;
+
 
     & li {
       display: inline-block; 
@@ -65,7 +40,7 @@
 
     & li button{ 
       color: transparent; 
-      background-color: green; 
+      background-color: #f7f7f7; 
       border: none; 
       outline: none; 
       width: 15px; 
@@ -75,10 +50,62 @@
     } 
 
     & li.slick-active button{ 
-      background-color: cyan; 
+      background-color: #2f4159; 
     }
   }
+
+}
+
+#reviews-id .review {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  
+  &__visual {
+    padding-right: 10px;
+  }
+
+  &__field {
+    width: 200px;
+    background-color: $bgc-gray;
+    padding: 20px;
+    padding-top: 25px;
+    position: relative;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 100%;
+      width: 25px;
+      height: 20px;
+      background: linear-gradient(40deg, transparent 50%, $bgc-gray 50%);
     }
+  }
+
+  &__photo {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/author.png');
+  }
+
+  &__author {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-10;
+    line-height: $lh-14;
+  }
+
+  &__text {
+    margin: 0;
+    align-items: center;
+    position: relative;
+    font-family: $ff-Ubuntu;
+    font-size: $sz-10;
+    line-height: $lh-14;
+  }
+
+}
 
 
 

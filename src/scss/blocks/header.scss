@@ -8,8 +8,10 @@
 		display: flex;
 		align-items: center;
 		width: $container-xs;
+
 		@media screen and (min-width: $screen-sm) {
 			width: $container-sm;
+			position: relative;
 		}
 
 		@media screen and (min-width: $screen-lg) {
@@ -33,22 +35,36 @@
 	transition: all 0.325s 0s ease;
 	// display: none;
 
-			&--active {
-			color: #fff;
-		}
 	@media screen and (min-width: $screen-sm) {
-		display: block;
+
+		width: 100%;
+		top: 35px;
 		height: auto;
 		transform: translate(0, 0);
+		background-color: rgba(30, 20, 50, 0.5);
 	}
-		&--open{
-			transform: translate(0, 0);
+
+	&--active {
+		color: #fff;
+	}
+	
+
+	&--open{
+		transform: translate(0, 0);
+	}
+
+	&__list{
+		padding: 0 30px;
+		margin: 0;
+		list-style-type: none;
+
+		@media screen and (min-width: $screen-sm) {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
-		&__list{
-			padding: 0 30px;
-			margin: 0;
-			list-style-type: none;
-		}
+	}
 
 }
 .main-nav__link {
@@ -64,6 +80,11 @@
 
 .main-title{
 
+
+	@media screen and (min-width: $screen-sm) {
+		padding-left: 50px;
+	}
+
 	&__head{
 		margin: 0;
 		color: #fff;
@@ -77,6 +98,8 @@
 		font-weight: 300;
 	}
 }
+
+
 
 .side-bar{
 	position: absolute;
@@ -92,6 +115,10 @@
 	justify-content: center;
 	white-space: nowrap;
 	z-index: 10;
+
+	@media screen and (min-width: $screen-sm) {
+		display: none;
+	}
 
 	&__vk{
 		@include sprite($vk);

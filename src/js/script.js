@@ -18,9 +18,11 @@ $(document).ready(function(){
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           arrows: true,
+          nextArrow: '<span class="slider-next"></span>',
+          prevArrow: '<span class="slider-prev"></span>'
         }
       }
     ]
@@ -39,9 +41,10 @@ $(document).ready(function(){
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           arrows: true,
+          slidesToShow: 2,
         }
       }
     ]

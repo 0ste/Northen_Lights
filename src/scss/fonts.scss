@@ -22,12 +22,12 @@
 }
 
 @font-face { 
-  font-family: 'Ubuntu'; 
+  font-family: 'Ubuntu Medium'; 
   src: url('../fonts/ubuntu-medium-webfont.woff') format('woff');
        // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
        // url('webfont.woff') format('woff'); 
   font-weight: 600; 
-  font-style: normal; 
+  font-style: medium; 
 }
 
 @font-face { 
@@ -39,11 +39,16 @@
   font-style: normal; 
 }
 
-@font-face { 
+
+@font-face{
   font-family: 'Nord'; 
-  src: url('../fonts/nordmedium-webfont.woff') format('woff');
-       // url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       // url('fonts/nordmedium-webfont.woff2') format('woff2'); 
-  font-weight: normal; 
-  font-style: normal; 
-}
+  src:url('http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84bcc.eot?#iefix') format('embedded-opentype'), 
+  url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff') format('woff'), 
+  url('http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd84bcc.woff2') format('woff2');}
+
+@font-face{
+  font-family:'Nord-Medium';
+  src:local('Nord-Medium'), url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff') 
+  format('woff');}#nordmedium{font-family:'Nord-Medium';}.font0475c723a666a5c519583942afd84bcc{font-family:'font0475c723a666a5c519583942afd84bcc';
+  font-weight: 200; }
+    

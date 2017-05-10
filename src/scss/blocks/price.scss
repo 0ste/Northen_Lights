@@ -1,0 +1,25 @@
+.price {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+
+  &__inner {
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    width: $container-xs;
+    @media screen and (min-width: $screen-sm) {
+      width: $container-sm;
+    }
+    @media screen and (min-width: $screen-lg) {
+      width: $container-lg;
+    }
+  }
+
+
+  &__title {
+    font-family: $ff-Jura;
+    font-size: $sz-20;
+    margin: 0;
+  }
+}
