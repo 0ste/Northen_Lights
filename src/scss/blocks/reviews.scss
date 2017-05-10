@@ -88,6 +88,11 @@
     width: 60px;
     height: 60px;
     background-image: url('../img/author.png');
+
+    @media screen and (min-width: $screen-sm) {
+      width: 95px;
+      height: 105px;
+    }
   }
 
   &__author {

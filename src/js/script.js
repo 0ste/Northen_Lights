@@ -29,7 +29,6 @@ $(document).ready(function(){
   });
 
 
-
   $('#reviews-id').slick({
     mobileFirst: true,
     slidesToShow: 1,
@@ -50,6 +49,20 @@ $(document).ready(function(){
     ]
   });
 
+});
+
+
+$(document).ready(function(){  
+  $('.contacts-place__location').on('click', function(){
+    $('contacts').addClass('.contacts-place__info');
+    $('.contacts-place__info').show(400);
+  });
+  
+  $('.contacts-place__close').on('click', function(){
+    $('contacts').removeClass('.contacts-place__info');
+    $('.contacts-place__info').hide(400);
+  });
+  
 });
 
 

@@ -41,7 +41,8 @@
     width: 50%; 
     padding-bottom: 30px;
 
-  &__link {
+
+  &__location {
       position: relative;
       font-family: $ff-Jura;
       font-size: $sz-14;
@@ -62,11 +63,69 @@
         background-color: #89c1a1;
       }
   }
-
   &__info {
-      // display: none;
+        /* display: none; */
+        position: absolute;
+        background-color: #fff;
+        z-index: 200;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 20px;
+        padding: 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+  }
+  &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #000;
+        cursor: pointer;
+  }
+  &__title {
+    font-family: $ff-Jura;
+    font-size: $sz-14;
+    padding-left: 30px;
+    position: relative;
 
-
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #89c1a1;
+      }
   }
 
+  &__name {
+      font-family: $ff-Ubuntu;
+      font-size: $sz-12;
+      line-height: $lh-14;
+      padding-left: 30px;
+  }
+
+  &__link {
+      position: relative;
+      padding-left: 30px;
+      font-family: $ff-Ubuntu;
+      font-size: $sz-12;
+      line-height: $lh-14;
+      color: #111;
+      text-decoration: none;
+
+}
 }

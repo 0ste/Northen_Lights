@@ -9,10 +9,19 @@
     align-items: center;
     width: $container-xs;
     @media screen and (min-width: $screen-sm) {
-      width: $container-sm;
+      width: $container-sm; 
+
     }
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
+    }
+  }
+
+  &__info {
+
+    @media screen and (min-width: $screen-sm) {
+      position: relative; 
+      display: flex;
     }
   }
 
@@ -97,6 +106,7 @@
       background-image: url('../img/map_320.png');
       min-height: 330px;
       background-size: cover;
+      background-position: center;
     }
 
  

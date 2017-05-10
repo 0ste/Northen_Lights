@@ -101,18 +101,20 @@
 
 		<section class="place" id="place-id">
 			<div class="place__inner">
-				<h2 class="place__title">Где и когда</h2>
-				<div class="place__time">
-					<p class="place__text">Наблюдать сияние можно в Якутске, Салехарде, Мурманске, на Таймыре и на Аляске. Наиболее часто полярное сияние встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части Гренландии, на севере Норвегии и Сибири.</p>
-					<ul class="place__list">
-						<li class="place__item place__item--pink">Летом</li>
-						<li class="place__item place__item--blue">Зимой</li>
-						<li class="place__item place__item--green">Весной</li>
-						<li class="place__item place__item--orange">Осенью</li>
-					</ul>
+				<div class="place__info">
+					<h2 class="place__title">Где и когда</h2>
+					<div class="place__time">
+						<p class="place__text">Наблюдать сияние можно в Якутске, Салехарде, Мурманске, на Таймыре и на Аляске. Наиболее часто полярное сияние встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части Гренландии, на севере Норвегии и Сибири.</p>
+						<ul class="place__list">
+							<li class="place__item place__item--pink">Летом</li>
+							<li class="place__item place__item--blue">Зимой</li>
+							<li class="place__item place__item--green">Весной</li>
+							<li class="place__item place__item--orange">Осенью</li>
+						</ul>
+					</div>
 				</div>
+				<div class="place__map"></div>
 			</div>
-			<div class="place__map"></div>
 		</section>
 
 
@@ -184,10 +186,13 @@
 				<div class="contacts__row">
 	
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Финляндия</a>
+						<a href="#" class="contacts-place__location">Финляндия</a>
+					
+
 						<div class="contacts-place__info">
+							<span class="contacts-place__close"></span>
 							<h3 class="contacts-place__title">Финляндия</h3>
-							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
+							<p class="contacts-place__name">Менеджер направления <br/>Артем Ливанов</p>
 							<a class="contacts-place__link" href="#">+7 (812) 612-67-00</a>
 							<a class="contacts-place__link" href="#">vk.com/muravey35</a>
 							<a class="contacts-place__link" href="#">example@mail.ru</a>
@@ -195,7 +200,7 @@
 					</div>
 
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Норвегия</a>
+						<a href="#" class="contacts-place__location">Норвегия</a>
 						<!-- <div class="contacts-place__info">
 							<h3 class="contacts-place__title">Норвегия</h3>
 							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
@@ -206,7 +211,7 @@
 					</div>
 
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Якутия</a>
+						<a href="#" class="contacts-place__location">Якутия</a>
 						<!-- <div class="contacts-place__info">
 							<h3 class="contacts-place__title">Якутия</h3>
 							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
@@ -217,7 +222,7 @@
 					</div>
 
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Аляска</a>
+						<a href="#" class="contacts-place__location">Аляска</a>
 						<!-- <div class="contacts-place__info">
 							<h3 class="contacts-place__title">Аляска</h3>
 							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
@@ -228,7 +233,7 @@
 					</div>
 
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Исландия</a>
+						<a href="#" class="contacts-place__location">Исландия</a>
 						<!-- <div class="contacts-place__info">
 							<h3 class="contacts-place__title">Исландия</h3>
 							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
@@ -239,7 +244,7 @@
 					</div>
 
 					<div class="contacts-place">
-						<a href="#" class="contacts-place__link">Мурманск</a>
+						<a href="#" class="contacts-place__location">Мурманск</a>
 						<!-- <div class="contacts-place__info">
 							<h3 class="contacts-place__title">Мурманск</h3>
 							<p class="contacts-place__name">Менеджер направления Артем Ливанов</p>
@@ -269,7 +274,7 @@
 					<div class="price__country-info id="price__alaska></div>
 					<div class="price__country-info id="price__iceland></div>
 					<div class="price__country-info id="price__murmansk></div>
-						<table>
+						<table class="price__table">
 							<thead>
 							<tbody>
 							<tr>
@@ -290,7 +295,7 @@
 							<tbody>
 							</thead>
 						</table>
-						<a href="#" class="prie__link">Посмотреть все предложения по Финляндии</a>
+						<a href="#" class="price__link">Посмотреть все предложения по Финляндии</a>
 					</div>
 
 

@@ -22,4 +22,62 @@
     font-size: $sz-20;
     margin: 0;
   }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+
+  }
+
+  &__item {
+    font-family: $ff-Jura;
+    font-size: $sz-12;
+    color: $c-text;
+  }
+
+  &__table {
+    border:1px solid #d0d0d0;
+    border-collapse:collapse;
+    color: $c-text;
+
+
+
+  }
+
+  tbody {
+        border: 1px;
+    border-color: #111;
+  }
+  th {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-10;
+    padding: 12px 20px;
+    text-align: left;
+    border-right: 1px solid #d0d0d0;
+  }
+
+  tr {
+    padding: 8px 5px;
+    text-align: left;
+    border-right: 1px solid;
+    border-bottom: 1px solid #d0d0d0;
+  }
+
+    td {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-10;
+    padding:12px 20px;
+    border-right: 1px solid #d0d0d0;
+  }
+
+  &__link {
+    font-family: $ff-Ubuntu;
+    font-size: $sz-12;
+    color: $c-text;
+  }
+
 }
+
+
+
+
