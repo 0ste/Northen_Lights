@@ -49,7 +49,7 @@ $(document).ready(function(){
     ]
   });
 
-});
+
 
 
 $(document).ready(function(){  
@@ -59,26 +59,20 @@ $(document).ready(function(){
     $('contacts').addClass('.contacts-place__info');
     $('.contacts-place__info').slideDown(400);
   });
+
   
   $('.contacts-place__close').on('click', function(){
     $('contacts').removeClass('.contacts-place__info');
     $('.contacts-place__info').slideUp(400);
   });
-  
 });
 
-$(document).ready(function(){
-  $('.price__country').on('click', function(){
-    $(this).parent().find('.price__country-info').toggle();
-  });
-})
-
-
 
 $(document).ready(function(){
-  $('.price__country').click(function(){
-    $(this).toggleClass('price__country--active price__country');
-    $('price__country--active').toggleClass('price__country');
+  $('.price__country').click(function(event){
+    event.preventDefault();
+    $(this).toggleClass('price__country--active');
   })
+
 
 

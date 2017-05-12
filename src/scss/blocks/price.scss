@@ -69,6 +69,7 @@
 
   &__country--active {
       color: $bgc-green;
+      display: block;
 
     &:after { 
       content: '';
@@ -85,7 +86,8 @@
   }
 
   &__country-info {
-
+      display: none;
+      display: block;
   }
 
   &__table {
