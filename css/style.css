@@ -426,7 +426,8 @@ img {
       position: absolute;
       left: 120%; }
   .price__country--active {
-    color: #b2dad0; }
+    color: #b2dad0;
+    display: block; }
     .price__country--active:after {
       content: '';
       width: 5px;
@@ -436,6 +437,9 @@ img {
       border-bottom: 1px solid #b2dad0;
       transform: rotate(45deg);
       left: 120%; }
+  .price__country-info {
+    display: none;
+    display: block; }
   .price__table {
     border: 1px solid #d0d0d0;
     border-collapse: collapse;
