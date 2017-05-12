@@ -25,7 +25,8 @@
 
   &__list {
     list-style-type: none;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 
   }
 
@@ -33,21 +34,72 @@
     font-family: $ff-Jura;
     font-size: $sz-12;
     color: $c-text;
+    margin: 30px 0;
+  }
+  
+  [class*="price__country-info"] {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  &__country {
+    font-family: $ff-Jura;
+    font-size: $sz-12;
+    text-decoration: none;
+    color: $c-text;
+    position: relative;
+    
+    &:after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      top: 5px;
+      border-right: 1px solid #000;
+      border-top: 1px solid #000;
+      transform: rotate(45deg);
+      // display: block;
+      position: absolute;
+      left: 120%;
+
+    }
+  }
+
+  &__country--active {
+      color: $bgc-green;
+
+    &:after { 
+      content: '';
+      width: 5px;
+      height: 5px;
+      top: 5px;
+      border-right: 1px solid $bgc-green;
+      border-bottom: 1px solid $bgc-green;
+      transform: rotate(45deg);
+      // display: block;
+      // position: absolute;
+      left: 120%;
+    }
+  }
+
+  &__country-info {
+
   }
 
   &__table {
     border:1px solid #d0d0d0;
     border-collapse:collapse;
     color: $c-text;
-
-
-
+    margin: 15px 0;
   }
 
   tbody {
-        border: 1px;
+    border: 1px;
     border-color: #111;
   }
+
   th {
     font-family: $ff-Ubuntu;
     font-size: $sz-10;

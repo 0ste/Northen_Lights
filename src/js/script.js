@@ -53,16 +53,32 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){  
-  $('.contacts-place__location').on('click', function(){
+  $('.contacts-place__location').on('click', function(event){
+    event.preventDefault();
+    console.log('click');
     $('contacts').addClass('.contacts-place__info');
-    $('.contacts-place__info').show(400);
+    $('.contacts-place__info').slideDown(400);
   });
   
   $('.contacts-place__close').on('click', function(){
     $('contacts').removeClass('.contacts-place__info');
-    $('.contacts-place__info').hide(400);
+    $('.contacts-place__info').slideUp(400);
   });
   
 });
+
+$(document).ready(function(){
+  $('.price__country').on('click', function(){
+    $(this).parent().find('.price__country-info').toggle();
+  });
+})
+
+
+
+$(document).ready(function(){
+  $('.price__country').click(function(){
+    $(this).toggleClass('price__country--active price__country');
+    $('price__country--active').toggleClass('price__country');
+  })
 
 

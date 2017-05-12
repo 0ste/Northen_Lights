@@ -84,16 +84,20 @@
     }
   }
 
-  &__photo {
-    width: 60px;
-    height: 60px;
-    background-image: url('../img/author.png');
 
-    @media screen and (min-width: $screen-sm) {
+  &__photo {
+
+      width: 60px;
+      height: 60px;
+      background-image: url('../img/author.png');
+      
+      @media screen and (min-width: $screen-sm) {
       width: 95px;
       height: 105px;
+      background-size: cover;
+      background-position: center;
+      }
     }
-  }
 
   &__author {
     font-family: $ff-Ubuntu;
