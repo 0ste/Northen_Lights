@@ -130,7 +130,7 @@ img {
   white-space: nowrap;
   z-index: 10; }
   .side-bar__vk {
-    background-image: url(../img/sprite-0603196047560546.png);
+    background-image: url(../img/sprite-08454918885114209.png);
     background-position: -88px 0px;
     width: 25px;
     height: 15px;
@@ -147,12 +147,12 @@ img {
   z-index: 9;
   margin: 10px; }
   .nav-burger--close {
-    background-image: url(../img/sprite-0603196047560546.png);
+    background-image: url(../img/sprite-08454918885114209.png);
     background-position: -44px 0px;
     width: 40px;
     height: 40px; }
   .nav-burger--hamburger {
-    background-image: url(../img/sprite-0603196047560546.png);
+    background-image: url(../img/sprite-08454918885114209.png);
     background-position: 0px 0px;
     width: 40px;
     height: 40px; }
@@ -493,14 +493,14 @@ img {
     display: none; }
 
 .slider-next {
-  background-image: url(../img/sprite-0603196047560546.png);
+  background-image: url(../img/sprite-08454918885114209.png);
   background-position: 0px -44px;
   width: 33px;
   height: 37px;
   right: -45px; }
 
 .slider-prev {
-  background-image: url(../img/sprite-0603196047560546.png);
+  background-image: url(../img/sprite-08454918885114209.png);
   background-position: -37px -44px;
   width: 33px;
   height: 37px;
