@@ -5,8 +5,6 @@ $(document).ready(function(){
     $('.main-nav').toggleClass('main-nav--open');
   })
 
-
-
   $('#slider-id').slick({
     mobileFirst: true,
     slidesToShow: 1,
@@ -28,7 +26,6 @@ $(document).ready(function(){
     ]
   });
 
-
   $('#reviews-id').slick({
     mobileFirst: true,
     slidesToShow: 1,
@@ -49,10 +46,6 @@ $(document).ready(function(){
     ]
   });
 
-
-
-
-$(document).ready(function(){  
   $('.contacts-place__location').on('click', function(event){
     event.preventDefault();
     console.log('click');
@@ -65,10 +58,7 @@ $(document).ready(function(){
     $('contacts').removeClass('.contacts-place__info');
     $('.contacts-place__info').slideUp(400);
   });
-});
 
-
-$(document).ready(function(){
   $('.price__country').click(function(event){
     event.preventDefault();
     $(this).toggleClass('price__country--active');
