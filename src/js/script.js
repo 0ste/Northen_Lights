@@ -72,7 +72,8 @@ $(document).ready(function(){
   $('.price__country').click(function(event){
     event.preventDefault();
     $(this).toggleClass('price__country--active');
-  })
+  });
+});
 
 
 
