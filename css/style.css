@@ -157,73 +157,85 @@ img {
     width: 40px;
     height: 40px; }
 
-.place {
-  padding-top: 40px; }
-  .place__inner {
-    margin: 0 auto;
-    position: relative;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 300px; }
-  .place__title {
-    font-family: "Jura", sans-serif;
-    font-size: 20px;
-    margin: 0; }
-  .place__time {
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 30px; }
-  .place__text {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 12px;
-    line-height: 20px;
-    margin: 0; }
-  .place__list {
-    list-style-type: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    font-family: "Jura", sans-serif;
-    font-size: 10px;
-    padding-left: 0;
-    padding-top: 30px; }
-  .place__item {
-    padding-left: 20px;
-    position: relative; }
-  .place .place__item:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px; }
-  .place .place__item--pink:before {
-    background-color: #ef8989; }
-  .place .place__item--blue:before {
-    background-color: #04a8a8; }
-  .place .place__item--green:before {
-    background-color: #cdd63f; }
-  .place .place__item--orange:before {
-    background-color: #efb672; }
-  .place__map {
-    position: relative;
-    margin-left: -20px;
-    background-image: url("../img/map_320.png");
-    min-height: 330px;
-    width: 340px;
-    background-size: cover;
-    background-position: center; }
+.place__inner {
+  padding-top: 40px;
+  margin: 0 auto;
+  position: relative;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.place__info {
+  width: 300px;
+  padding-left: 10px; }
+
+.place__title {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  margin: 0; }
+
+.place__time {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px; }
+
+.place__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0; }
+
+.place__list {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-family: "Jura", sans-serif;
+  font-size: 10px;
+  padding-left: 0;
+  padding-top: 30px; }
+
+.place__item {
+  padding-left: 20px;
+  position: relative; }
+
+.place .place__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px; }
+
+.place .place__item--pink:before {
+  background-color: #ef8989; }
+
+.place .place__item--blue:before {
+  background-color: #04a8a8; }
+
+.place .place__item--green:before {
+  background-color: #cdd63f; }
+
+.place .place__item--orange:before {
+  background-color: #efb672; }
+
+.place__map {
+  position: relative;
+  margin-left: -20px;
+  background-image: url("../img/map_320.png");
+  min-height: 330px;
+  background-size: cover;
+  background-position: center; }
 
 .reviews {
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #b2dad0; }
   .reviews__inner {
     margin: 0 auto;
     position: relative;
     -ms-flex-align: center;
         align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 300px; }
   .reviews__title {
     font-family: "Jura", sans-serif;
@@ -232,6 +244,8 @@ img {
   .reviews__slider {
     padding-top: 50px;
     padding-bottom: 50px; }
+  .reviews .slick-prev .slick-arrow button {
+    display: none; }
   .reviews .slick-dots {
     padding-left: 0;
     text-align: right; }
@@ -429,16 +443,14 @@ img {
       position: absolute;
       left: 120%; }
   .price__country--active {
-    color: #b2dad0;
-    display: block; }
+    color: #b2dad0; }
     .price__country--active:after {
       content: '';
       width: 5px;
       height: 5px;
-      top: 5px;
       border-right: 1px solid #b2dad0;
       border-bottom: 1px solid #b2dad0;
-      transform: rotate(45deg);
+      border-top: 1px solid transparent;
       left: 120%; }
   .price .price__country--active ~ .price__country-info {
     display: block; }
@@ -554,7 +566,7 @@ img {
     width: 300px; }
   .about__title {
     font-family: "Jura", sans-serif;
-    font-size: fz-20;
+    font-size: 20px;
     margin: 0;
     line-height: 24px; }
   .about__row {
@@ -719,8 +731,11 @@ img {
 
   .place__inner {
     width: 748px;
+    padding-top: 0;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
 
   .place__info {
     position: relative;
@@ -728,7 +743,9 @@ img {
     -ms-grid-row-align: stretch;
     align-self: stretch;
     width: 50%;
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 30px; }
 
   .place__map {
     position: relative;
@@ -739,7 +756,16 @@ img {
     padding-top: 30px; }
 
   .reviews__inner {
-    width: 748px; }
+    width: 748px;
+    padding-top: 30px;
+    padding-bottom: 20px; }
+
+  .reviews__slider {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  #reviews-id .review__visual {
+    padding-right: 30px; }
 
   #reviews-id .review__photo {
     width: 95px;
