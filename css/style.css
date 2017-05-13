@@ -440,9 +440,10 @@ img {
       border-bottom: 1px solid #b2dad0;
       transform: rotate(45deg);
       left: 120%; }
-  .price__country-info {
-    display: none;
+  .price .price__country--active ~ .price__country-info {
     display: block; }
+  .price__country-info {
+    display: none; }
   .price__table {
     border: 1px solid #d0d0d0;
     border-collapse: collapse;
@@ -717,12 +718,25 @@ img {
     display: none; }
 
   .place__inner {
-    width: 748px; }
+    width: 748px;
+    display: -ms-flexbox;
+    display: flex; }
 
   .place__info {
     position: relative;
-    display: -ms-flexbox;
-    display: flex; }
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    width: 50%;
+    padding-top: 30px; }
+
+  .place__map {
+    position: relative;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    width: 50%;
+    padding-top: 30px; }
 
   .reviews__inner {
     width: 748px; }
