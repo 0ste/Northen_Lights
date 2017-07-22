@@ -40,6 +40,12 @@
       width: 50%;
       padding-top: 30px;
     }
+
+    @media screen and (min-width: $screen-lg) {
+      align-self: stretch;
+      width: 50%;
+      padding-top: 60px;
+    }
   }
 
   &__title {
@@ -47,6 +53,12 @@
     font-size: $sz-20;
     line-height: $lh-24;
     margin: 0;
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $sz-30;
+    line-height: $lh-36;
+    padding-right: 100px;
+  }
   }
 
 
@@ -93,6 +105,7 @@
   &__item {
     margin-top: 10px;
     margin-bottom: 10px;
+    outline: none;
   }
   
   &__text {
@@ -106,6 +119,10 @@
     @media screen and (min-width: $screen-sm) {
       padding-right: 30px;
     }
+    @media screen and (min-width: $screen-lg) {
+    font-size: $sz-16;
+    line-height: $lh-30;
+  }
   }
 
   & .slick-arrow {

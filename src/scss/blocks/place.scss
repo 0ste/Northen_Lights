@@ -1,25 +1,40 @@
 .place {
-  padding-top: 40px;
+
 
 
 
   &__inner {
+    padding-top: 40px;
     margin: 0 auto;
     position: relative;
     align-items: center;
-    width: $container-xs;
+    // width: $container-xs;
     @media screen and (min-width: $screen-sm) {
-      width: $container-sm; 
+      width: $container-sm;
+      padding-top: 0; 
+      display: flex;
+      flex-direction: row-reverse;
     }
+    
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
     }
   }
 
   &__info {
+    width: $container-xs;
+    padding-left: 10px;
     @media screen and (min-width: $screen-sm) {
       position: relative; 
-      display: flex;
+      align-self: stretch;
+      width: 50%;
+      padding-top: 30px;
+      padding-left: 20px;
+      padding-right: 30px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      padding-top: 60px;
 
     }
   }
@@ -28,6 +43,10 @@
       font-family: $ff-Jura;
       font-size: $sz-20;
       margin: 0;
+    
+    @media screen and (min-width: $screen-lg) {
+      font-size: $sz-30;
+    }
     }
 
     &__time {
@@ -41,6 +60,16 @@
       font-size: $sz-12;
       line-height: $lh-20;
       margin: 0;
+
+    @media screen and (min-width: $screen-lg) {
+      padding-right: 40px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: $sz-16;
+      line-height: $lh-30;
+    }
+
     }
 
     &__list {
@@ -51,6 +80,10 @@
       font-size: $sz-10;
       padding-left: 0;
       padding-top: 30px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: $sz-16;
+    }
     }
 
     &__item {
@@ -85,33 +118,19 @@
     }
 
 
-    //   &__item:before {
-    //   content: '';
-    //   position: absolute;
-    //   left: 0;
-    //   width: 10px;
-    //   height: 10px;
-    //   background-color: #ef8989;
-    // }
-
-  
-      // &--pink:before {
-      //   background-color: #ef8989;
-      // }
-
-
     &__map {
       position: relative;
       margin-left: -20px;
       background-image: url('../img/map_320.png');
       min-height: 330px;
-      width: 340px;
       background-size: cover;
       background-position: center;
+
+    @media screen and (min-width: $screen-sm) {
+      position: relative; 
+      align-self: stretch;
+      width: 50%;
+      padding-top: 30px;
     }
-
- 
-
-
-
+  }
 }

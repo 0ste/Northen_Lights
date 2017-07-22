@@ -5,8 +5,6 @@
     background-size: cover;
     background-position: center;
 
-
-
   &__inner {
     margin: 0 auto;
     position: relative;
@@ -25,7 +23,6 @@
       font-size: $sz-20;
       margin: 0;
       color: $c-white;
-
     }
 
     &__row {
@@ -34,21 +31,25 @@
       padding-top: 50px;
       padding-bottom: 20px;
     }
-
 }
 
 .contacts-place {
-    width: 50%; 
-    padding-bottom: 30px;
+      width: 50%;
+      padding-bottom: 30px;
+
+    @media screen and (min-width: $screen-sm) {
+      width: 25%;
+    }
 
 
-  &__location {
+    &__location {
       position: relative;
       font-family: $ff-Jura;
       font-size: $sz-14;
       color: $c-white;
       text-decoration: none;
       padding-left: 30px;
+
 
       &:before {
         content: '';
@@ -62,7 +63,8 @@
         height: 10px;
         background-color: #89c1a1;
       }
-  }
+    }
+
   &__info {
         display: none;
         position: absolute;
@@ -77,8 +79,21 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+
+    @media screen and (min-width: $screen-sm) {
+      position: relative;
+      display: block;
+      background-color: transparent;
+      color: #fff;
+      margin: 0;
+      padding-left: 0;
+      width: 120%;
+
+    }
   }
+
   &__close {
+        // content: '';
         position: absolute;
         right: 30px;
         top: 30px;
@@ -90,7 +105,12 @@
         border-radius: 50%;
         border: 1px solid #000;
         cursor: pointer;
+
+    @media screen and (min-width: $screen-sm) {
+        display: none;
+    }
   }
+
   &__title {
     font-family: $ff-Jura;
     font-size: $sz-14;
@@ -109,6 +129,9 @@
         height: 10px;
         background-color: #89c1a1;
       }
+  @media screen and (min-width: $screen-sm) {
+    display: none;
+    }
   }
 
   &__name {
@@ -116,6 +139,9 @@
       font-size: $sz-12;
       line-height: $lh-14;
       padding-left: 30px;
+    @media screen and (min-width: $screen-sm) {
+      line-height: $lh-20;
+    }
   }
 
   &__link {
@@ -126,6 +152,8 @@
       line-height: $lh-14;
       color: #111;
       text-decoration: none;
-
-}
+    @media screen and (min-width: $screen-sm) {
+      color: #fff;
+    }
+  }
 }

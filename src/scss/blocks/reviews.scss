@@ -1,6 +1,4 @@
 .reviews {
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: $bgc-green;
 
 
@@ -8,12 +6,17 @@
     margin: 0 auto;
     position: relative;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: $container-xs;
     @media screen and (min-width: $screen-sm) {
       width: $container-sm;
+      padding-top: 30px;
+      padding-bottom: 20px;
     }
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
+      padding-top: 60px;
     }
   }
 
@@ -22,17 +25,36 @@
     font-family: $ff-Jura;
     font-size: $sz-20;
     margin: 0;
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $sz-30;
+    }
   }
 
   &__slider {
     padding-top: 50px;
     padding-bottom: 50px;
+
+  @media screen and (min-width: $screen-sm) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
   }
 
-  & .slick-dots {
-    padding-left: 0;
-    text-align: right;
+  .slick-prev .slick-arrow button {
+    display: none;
+  }
 
+  & .slick-dots .slick-dots {
+    padding-left: 0;
+  }
+  & ul{
+    text-align: right;
+    padding: 0;
+  @media screen and (min-width: $screen-sm) {
+      text-align: center;
+     }
+  }
 
     & li {
       display: inline-block; 
@@ -52,18 +74,14 @@
     & li.slick-active button{ 
       background-color: #2f4159; 
     }
-  }
-
 }
 
 #reviews-id .review {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
-  
-  &__visual {
-    padding-right: 10px;
-  }
+  outline: none;
+
 
   &__field {
     width: 200px;
@@ -82,27 +100,50 @@
       height: 20px;
       background: linear-gradient(40deg, transparent 50%, $bgc-gray 50%);
     }
+   @media screen and (min-width: $screen-lg) {
+    width: 350px;
+  }
+
   }
 
 
-  &__photo {
-
+  &__visual {
+      padding-right: 10px;
       width: 60px;
       height: 60px;
-      background-image: url('../img/author.png');
+      // background-image: url('../img/author.png');
       
-      @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: $screen-sm) {
       width: 95px;
       height: 105px;
+      background-size: cover;
+      background-position: center;
+      padding-right: 30px;
+      }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 170px;
+      height: 150px;
       background-size: cover;
       background-position: center;
       }
     }
 
+  &__photo {
+      background-size: cover;
+      background-position: center;
+      background-image: url('../img/author.png');
+  }
+
   &__author {
     font-family: $ff-Ubuntu;
     font-size: $sz-10;
     line-height: $lh-14;
+   @media screen and (min-width: $screen-lg) {
+    font-size: $sz-16;
+    line-height: $lh-30;
+  }
+
   }
 
   &__text {
@@ -112,6 +153,11 @@
     font-family: $ff-Ubuntu;
     font-size: $sz-10;
     line-height: $lh-14;
+
+  @media screen and (min-width: $screen-lg) {
+    font-size: $sz-16;
+    line-height: $lh-30;
+  }
   }
 
 }

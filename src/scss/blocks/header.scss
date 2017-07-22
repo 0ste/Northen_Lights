@@ -76,6 +76,9 @@
 	&--active {
 		color: #fff;
 	}
+	@media screen and (min-width: $screen-lg) {
+	font-size: $sz-16;
+	}
 }
 
 .main-title{
@@ -90,12 +93,19 @@
 		color: #fff;
 		text-decoration: none;
 		font-family: $ff-Nord;
+
+		@media screen and (min-width: $screen-lg) {
+		font-size: 50px;
+	}
 	}
 	&__description {
 		font-family: $ff-Jura;
 		font-size: $sz-16;
 		color: $c-white;
 		font-weight: 300;
+	}
+	@media screen and (min-width: $screen-sm) {
+		font-size: $sz-20;
 	}
 }
 

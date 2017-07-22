@@ -3,6 +3,7 @@
   padding-bottom: 40px;
 
 
+
   &__inner {
     margin: 0 auto;
     position: relative;
@@ -10,10 +11,15 @@
     width: $container-xs;
     @media screen and (min-width: $screen-sm) {
       width: $container-sm;
+      min-height: 300px;
     }
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
     }
+  }
+
+  &__content {
+    overflow: hidden;
   }
 
 
@@ -24,13 +30,23 @@
   }
 
   &__list {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
 
+
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-left: -40px;
+
+    }
+
   }
 
-  &__item {
+  &__item a {
     font-family: $ff-Jura;
     font-size: $sz-12;
     color: $c-text;
@@ -51,6 +67,11 @@
     text-decoration: none;
     color: $c-text;
     position: relative;
+
+   @media screen and (min-width: $screen-sm) {
+    display: flex;
+    // justify-content: space-around;
+    }
     
     &:after {
       content: '';
@@ -63,31 +84,44 @@
       // display: block;
       position: absolute;
       left: 120%;
-
     }
+
   }
 
-  &__country--active {
+  &__country--active a {
       color: $bgc-green;
-      display: block;
+      // display: block;
 
     &:after { 
       content: '';
       width: 5px;
       height: 5px;
-      top: 5px;
+      // top: 5px;
       border-right: 1px solid $bgc-green;
       border-bottom: 1px solid $bgc-green;
-      transform: rotate(45deg);
+      // transform: rotate(45deg);
+      border-top: 1px solid transparent;
       // display: block;
       // position: absolute;
       left: 120%;
     }
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+    }
   }
+
+  .price__country--active ~ .price__country-info{
+      display: block;
+    @media screen and (min-width: $screen-sm) {
+      position: absolute;
+    }
+}
 
   &__country-info {
       display: none;
-      display: block;
+
   }
 
   &__table {
@@ -95,6 +129,10 @@
     border-collapse:collapse;
     color: $c-text;
     margin: 15px 0;
+
+  @media screen and (min-width: $screen-sm) {
+    margin-top: 30px;
+    }
   }
 
   tbody {
@@ -108,6 +146,10 @@
     padding: 12px 20px;
     text-align: left;
     border-right: 1px solid #d0d0d0;
+
+   @media screen and (min-width: $screen-sm) {
+    padding: 20px 30px;
+    }
   }
 
   tr {
@@ -115,6 +157,10 @@
     text-align: left;
     border-right: 1px solid;
     border-bottom: 1px solid #d0d0d0;
+
+   @media screen and (min-width: $screen-sm) {
+    padding: 15px 12px;
+    }
   }
 
     td {
@@ -122,12 +168,17 @@
     font-size: $sz-10;
     padding:12px 20px;
     border-right: 1px solid #d0d0d0;
+
+   @media screen and (min-width: $screen-sm) {
+    padding: 20px 30px;
+    }
   }
 
   &__link {
     font-family: $ff-Ubuntu;
     font-size: $sz-12;
     color: $c-text;
+    float: left;
   }
 
 }

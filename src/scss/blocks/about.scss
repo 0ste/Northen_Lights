@@ -16,15 +16,20 @@
 
     @media screen and (min-width: $screen-lg) {
       width: $container-lg;
+      padding-top: 20px;
     }
   }
   &__title {
     font-family: $ff-Jura;
-    font-size: fz-20;
+    font-size: $sz-20;
     margin: 0;
     line-height: $lh-24;
-
+  
+  @media screen and (min-width: $screen-lg) {
+    font-size: $sz-30;
+    }
   }
+  
   &__row {
     position: relative; 
     padding-top: 20px;
@@ -42,9 +47,16 @@
         left: 4px;
         width: 748px;
         height: 1px;
-
         background-color: #b2dad0;
       }
+
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+
+      &:before {
+        width: 1170px;
+      }
+    }
     }
 
     &:before {
@@ -92,6 +104,10 @@
 
     @media screen and (min-width: $screen-sm) {
     padding-top: 30px;
+    }
+    @media screen and (min-width: $screen-lg) {
+    font-size: $sz-16;
+    line-height: $lh-30;
     }
   }
 
